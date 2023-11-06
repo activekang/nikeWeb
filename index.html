@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>johnathan-website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respond.css">
+</head>
+<body>
+   <p class="skip">
+     <a href="#contents">skip to contents</a>
+   </p>
+   <header id="header">
+     <div class="headerArea clearfix">
+         <h1 class="logo"> <a href="#">Nike Mall</a></h1>
+         <nav>
+            <ul class="clearfix">
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Boy</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Snkrs</a></li>
+            </ul>
+         </nav>
+         <a href="#" class="gnb_btn">menu</a>
+     </div>
+   </header> 
+   <section id="contents">
+     <h2 class="blind">Product list</h2>
+     <ul class="clearfix">
+        <li>
+            <a href="#">
+              <strong>running</strong>
+              <img src="img/nike1.jpg" alt="nike1">  
+            </a>
+        </li>
+        <li>
+          <a href="#">
+            <strong>running</strong>
+            <img src="img/nike2.jpg" alt="nike1">  
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <strong>running</strong>
+            <img src="img/nike3.jpg" alt="nike1">  
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <strong>running</strong>
+            <img src="img/nike4.jpg" alt="nike1">  
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <strong>running</strong>
+            <img src="img/nike5.jpg" alt="nike1">  
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <strong>running</strong>
+            <img src="img/nike7.jpg" alt="nike1">  
+          </a>
+        </li>
+       
+     </ul>
+   </section>
+   <footer id="footer" class="clearfix">
+     <p class="copy">
+        <strong>Nike Mall</strong>
+        <small>(유)나이키코리아 대표 Kimberlee Lynn Chang Mendes</small>
+     </p>
+    
+     <address> 서울 강남구 테헤란로 152 강남파이낸스센터 30층 </address>
+     <address>
+         <a href="mailto:service@nike.co.kr">service@nike.co.kr</a>
+         <p>© 2023 Nike, Inc. All Rights Reserved</p> 
+        </address>
+     <dl class="clearfix">
+        <dt>SNS Link</dt>
+        <dd><a href="#">Github</a></dd>
+        <dd><a href="#">Twitter</a></dd>
+     </dl>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+$(function(){
+  $('.gnb_btn').click(function(){
+      $('nav').slideToggle();
+    });
+
+  $(window).resize(function(){
+   if($(this).width() > 750){
+     $('nav').show();
+   }else {
+     $('nav').hide();
+   }
+  });
+});
+</script>
+</body>
+</html>
